@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen y video</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Imagen</h1>
+            <figure> <!-- Semántica apropiada para encajonar una imagen -->
+                <img src="./img/imagen.jpg" alt="Imagen de un perro">
+            </figure>
+            <figcaption><!-- Semántica apropiada para un pie de página -->
+                Imagen de un perro
+            </figcaption>
+        </section>
+        <section>
+            <h1>Video</h1>
+            <video controls preload="auto"> <!-- controls | Muestra los controles del video. preload="auto" | Carga el video cuando se accede a la página sin reproducirlo automáticamente. -->
+                <source src="./video/DVR_Octubre.mp4"/> <!-- Source se utiliza para reproducir videos en diferentes formatos, por si el navegador no reconoce alguno. Respeta el primero que reconoce y muestra sólo 1 video. -->
+                <source src="./video/DVR_Octubre.mv4#t=3,5"/> <!-- #t=3,5  |  Se utiliza para que el video se reproduzca a partir del segundo 3 y finalice en el segundo 5. -->
+            </video>
+        </section>
+    </main>
+    
+</body>
+</html>
